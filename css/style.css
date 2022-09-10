@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background: var(--c-b);
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 5px 32px;
+    justify-content: space-between;
+    color: var(--c-w);
+}
+#logo{
+    font-size: 20px;
+    cursor: pointer;
+}
+#logo img{
+    width: 100px;
+    filter: invert();
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+    margin: 1rem 2rem;
+}
+.menu i{
+    margin: 1rem;
+    cursor: pointer;
+}
+.menu li a{
+    text-decoration: none;
+    color: var(--c-w);
+}
+.menu li a:hover{
+    color: red;
+}
+#hamburger{
+    border: 1px solid white;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    padding: 4px;
+    display: none;
+}
+.line{
+    width: 20px;
+    height: 0.5px;
+    margin: 4px 0;
+    background-color: white;
+}
+#main::before{
+    background: #00000030 url(../img/bg.jpg) center/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top:0;
+
+    width: 100%;
+    height: 85%;
+    z-index: -1;
+}
+#main{
+    width: 100%;
+    height: 85vh;
+}
+#content{
+    display: flex;
+    margin: 0 4rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 32%;
+    height: 60vh;
+    color: var(--c-w);
+}
+#content button{
+    margin: 1rem 0;
+    width: fit-content;
+}
+#about{
+    display: flex;
+    color: var(--c-w);
+}
+#about-img img{
+    width: 400px;
+}
+#about-content{
+    padding: 2rem;
+}
+#about-content h2{
+    padding-bottom: 2rem;
+}
+#about-content p{
+    padding: 1rem 0;
+}
+#services{
+    background: #00000070 url(../img/banner.jpg) center/cover;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    color: var(--c-b);
+}
+.card{
+    background-color: var(--c-w);
+    margin: 1rem;
+    padding: 1rem;
+    
+    text-align: center;
+}
+.card h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    
+}
+#promo{
+    background-color: rgb(2, 35, 70);
+    color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn{
+    background: none;
+    color: bisque;
+    padding: 8px;
+    border: 1px solid beige;
+    font-weight: bolder;
+}
+.btn:hover{
+    background: var(--c-w);
+    color: black;
+    padding: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+#client{
+    display: flex;
+}
+.clients{
+    background-color: var(--c-w);
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+.clients img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.clients h3{
+    padding: 6px 0;
+}
+#footer{
+    background: #00000080 url(../img/banner-1.jpg) center/cover;
+    background-blend-mode: darken;
+    color: var(--c-w);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#about-me{
+    width: 40%;
+}
+#about-me img{
+    filter: invert();
+    width: 150px;
+}
+#about-me p{
+    padding: 8px 0;
+}
+#social-icons i{
+    padding: 0px 8px;
+}
+#social-icons i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#links h3{
+    font-size: 1.5rem;
+    padding: 8px 0;
+}
+#links ul li{
+    padding: 4px 0;
+    list-style: none;
+}
+#links ul li a{
+    text-decoration: none;
+    color: var(--c-w);
+}
+#links ul li a:hover{
+    
+    color: red;
+}
+#contact div{
+    padding: 8px 0;
+}
+.h1{
+    font-size: 3.5rem;
+}
+.h2{
+    font-size: 3rem;
+    
+}
+.p-4{
+    padding: 4rem;
+}
+:root{
+    --c-w: white;
+    --c-b: rgb(16, 17, 19);
+}

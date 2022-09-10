@@ -1,0 +1,45 @@
+@media screen and (max-width: 960px){
+    #about{
+        flex-direction: column;
+        align-items: center;
+    }
+    #services{
+        flex-direction: column;
+    }
+    #client{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width: 760px){
+    nav{
+        flex-direction: column;
+        background-color: #00000050;
+        height: fit-content;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu{
+        flex-direction: column;
+        
+        
+    }
+    #footer{
+        flex-direction: column;
+        
+    }
+    #about-me{
+        width: 100%;
+    }
+    #links{
+        padding-bottom: 2rem;
+    }
+    #hamburger{
+        display: block;
+    }
+    .height{
+        height: auto;
+    }
+    .visibilty{
+        display: none;
+    }
+}
